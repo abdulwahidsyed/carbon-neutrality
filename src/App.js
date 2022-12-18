@@ -16,7 +16,7 @@ function App() {
         </div>
         <MainPage />
       </main>
-      {/* <footer></footer> */}
+      <footer></footer>
     </div>
   );
 }
