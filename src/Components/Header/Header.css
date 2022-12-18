@@ -1,0 +1,58 @@
+.header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: flex-start;
+  padding: 0 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.header-box {
+  gap: 20px;
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+
+.address {
+  margin: 0;
+}
+
+.type {
+  font-size: 16px;
+  margin: 0;
+}
+
+.ham {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .header {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-box {
+    flex-direction: column;
+    height: unset;
+    gap: 0;
+  }
+
+  .clg,
+  .address {
+    margin-bottom: 4px;
+  }
+}
